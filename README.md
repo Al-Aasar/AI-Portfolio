@@ -4,7 +4,7 @@ This project is an **End-to-End RAG (Retrieval-Augmented Generation)** applicati
 
 ## 🚀 Features
 * **Semantic Search**: Uses `FastEmbed` and `ChromaDB` to retrieve relevant technical logic from 12+ Jupyter Notebooks and CV.
-* **Context-Aware Responses**: Powered by `Gemini 1.5 Flash` to answer questions based strictly on the provided technical context.
+* **Context-Aware Responses**: Powered by `Gemini 2.5 Flash` to answer questions based strictly on the provided technical context.
 * **Modern Chat UI**: A responsive web interface featuring a clean design and integrated profile visuals.
 * **Bilingual Support**: Capable of understanding and responding in both Arabic and English while maintaining technical accuracy.
 
