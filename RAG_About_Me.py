@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-api_key = os.getenv("GOOGLE_API_KEY")
+os.environ["GOOGLE_API_KEY"] = "AIzaSyCoSOY_rtJ26D5RamAa1z3u8Et3OIDzoEg" 
 
 
 persist_directory = "./chroma_db"
