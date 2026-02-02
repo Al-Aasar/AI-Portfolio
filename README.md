@@ -9,7 +9,7 @@ This project is an **End-to-End RAG (Retrieval-Augmented Generation)** applicati
 * **Bilingual Support**: Capable of understanding and responding in both Arabic and English while maintaining technical accuracy.
 
 ## 🛠️ Tech Stack
-* **LLM**: Google Gemini 1.5 Flash.
+* **LLM**: Google Gemini 2.5 Flash.
 * **Frameworks**: LangChain, Flask.
 * **Vector Database**: ChromaDB.
 * **Embeddings**: FastEmbed (Lightweight & Fast).
