@@ -1,8 +1,8 @@
-flask
-flask-cors
 langchain
 langchain-community
 langchain-google-genai
 langchain-chroma
 fastembed
 chromadb
+flask
+flask-cors
