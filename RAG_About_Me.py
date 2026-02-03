@@ -4,8 +4,8 @@ from flask_cors import CORS
 from langchain_chroma import Chroma
 from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_classic.chains.combine_documents import create_stuff_documents_chain
-from langchain_classic.chains.retrieval import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains import create_retrieval_chain
 from langchain_core.prompts import ChatPromptTemplate
 
 app = Flask(__name__)
@@ -30,8 +30,8 @@ else:
 retriever = vector_store.as_retriever(search_kwargs={"k": 15})
 
 model = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", 
-        temperature=0.3
+    model="gemini-1.5-flash", 
+    temperature=0.3
 )
 
 system_prompt = (
